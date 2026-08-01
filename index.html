@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>منهج الرياضيات للصف الأول الإعدادي</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Tahoma, Arial, sans-serif;
+}
+
+body{
+    background:#f4f7fc;
+    color:#333;
+}
+
+header{
+    background:#1e88e5;
+    color:white;
+    text-align:center;
+    padding:40px 20px;
+}
+
+header h1{
+    margin-bottom:10px;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:30px auto;
+}
+
+.units{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    border-radius:15px;
+    padding:20px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card h2{
+    color:#1565c0;
+    margin-bottom:15px;
+}
+
+.card ul{
+    padding-right:20px;
+}
+
+.card li{
+    margin-bottom:8px;
+}
+
+.quiz{
+    background:white;
+    margin-top:30px;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+.quiz h2{
+    color:#2e7d32;
+    margin-bottom:15px;
+}
+
+button{
+    background:#2e7d32;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:8px;
+    cursor:pointer;
+    margin-top:15px;
+}
+
+button:hover{
+    background:#1b5e20;
+}
+
+.answer{
+    display:none;
+    margin-top:15px;
+    font-weight:bold;
+    color:#1b5e20;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    margin-top:30px;
+    color:#666;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>منهج الرياضيات للصف الأول الإعدادي</h1>
+    <p>منصة تعليمية لعرض وحدات المنهج والدروس الأساسية</p>
+</header>
+
+<div class="container">
+
+    <div class="units">
+
+        <div class="card">
+            <h2>الوحدة الأولى: الأعداد والجبر</h2>
+            <ul>
+                <li>العمليات على الأعداد الصحيحة</li>
+                <li>القوى والأسس</li>
+                <li>المعادلات البسيطة</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>الوحدة الثانية: الهندسة</h2>
+            <ul>
+                <li>الزوايا</li>
+                <li>المثلثات</li>
+                <li>الأشكال الهندسية</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>الوحدة الثالثة: القياس</h2>
+            <ul>
+                <li>المحيط</li>
+                <li>المساحة</li>
+                <li>الحجم</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>الوحدة الرابعة: الإحصاء</h2>
+            <ul>
+                <li>جمع البيانات</li>
+                <li>التمثيل البياني</li>
+                <li>المتوسط الحسابي</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="quiz">
+        <h2>اختبر معلوماتك</h2>
+        <p>ما ناتج 15 + 27 ؟</p>
+
+        <button onclick="showAnswer()">عرض الإجابة</button>
+
+        <div class="answer" id="answer">
+            الإجابة الصحيحة هي: 42
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    © 2026 موقع الرياضيات للصف الأول الإعدادي
+</footer>
+
+<script>
+function showAnswer(){
+    document.getElementById("answer").style.display = "block";
+}
+</script>
+
+</body>
+</html>
