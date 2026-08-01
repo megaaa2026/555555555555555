@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+2
+<html lang="ar" dir="rtl">
+3
+<head>
+4
+<meta charset="UTF-8">
+5
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+6
+<title>منهج الرياضيات للصف الأول الإعدادي</title>
+7
+ 
+8
+<style>
+9
+*{
+10
+margin:0;
+11
+padding:0;
+12
+box-sizing:border-box;
+13
+font-family:Tahoma, Arial, sans-serif;
+14
+}
+15
+ 
+16
+body{
+17
+background:#f4f7fc;
+18
+color:#333;
+19
+}
+20
+ 
+21
+header{
+22
+background:#1e88e5;
+23
+color:white;
+24
+text-align:center;
+25
+padding:40px 20px;
+26
+}
+27
+ 
+28
+header h1{
+29
+margin-bottom:10px;
+30
+}
+31
+ 
+32
+.container{
+33
+width:90%;
+34
+max-width:1200px;
+35
+margin:30px auto;
+36
+}
+37
+ 
+38
+.units{
+39
+display:grid;
+40
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+41
+gap:20px;
+42
+}
+43
+ 
+44
+.card{
+45
+background:white;
+46
+border-radius:15px;
+47
+padding:20px;
+48
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
+49
+transition:0.3s;
+50
+}
+51
+ 
+52
+.card:hover{
+53
+transform:translateY(-5px);
+54
+}
+55
+ 
+56
+.card h2{
+57
+color:#1565c0;
+58
+margin-bottom:15px;
+59
+}
+60
+ 
+61
+.card ul{
+62
+padding-right:20px;
+63
+}
+64
+ 
+65
+.card li{
+66
+margin-bottom:8px;
+67
+}
+68
+ 
+69
+.quiz{
+70
+background:white;
+71
+margin-top:30px;
+72
+padding:25px;
+73
+border-radius:15px;
+74
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
+75
+}
+76
+ 
+77
+.quiz h2{
+78
+color:#2e7d32;
+79
+margin-bottom:15px;
+80
+}
+81
+ 
+82
+button{
+83
+background:#2e7d32;
+84
+color:white;
+85
+border:none;
+86
+padding:10px 20px;
+87
+border-radius:8px;
+88
+cursor:pointer;
+89
+margin-top:15px;
+90
+}
+91
+ 
+92
+button:hover{
+93
+background:#1b5e20;
+94
+}
+95
+ 
+96
+.answer{
+97
+display:none;
+98
+margin-top:15px;
+99
+font-weight:bold;
+100
+color:#1b5e20;
+101
+}
+102
+ 
+103
+footer{
+104
+text-align:center;
+105
+padding:20px;
+106
+margin-top:30px;
+107
+color:#666;
+108
+}
+109
+</style>
+110
+</head>
+111
+ 
+112
+<body>
+113
+ 
+114
+<header>
+115
+<h1>منهج الرياضيات للصف الأول الإعدادي</h1>
+116
+<p>منصة تعليمية لعرض وحدات المنهج والدروس الأساسية</p>
+117
+</header>
+118
+ 
+119
+<div class="container">
+120
+ 
+121
+<div class="units">
+122
+ 
+123
+<div class="card">
+124
+<h2>الوحدة الأولى: الأعداد والجبر</h2>
+125
+<ul>
+126
+<li>العمليات على الأعداد الصحيحة</li>
+127
+<li>القوى والأسس</li>
+128
+<li>المعادلات البسيطة</li>
+129
+</ul>
+130
+</div>
+131
+ 
+132
+<div class="card">
+133
+<h2>الوحدة الثانية: الهندسة</h2>
+134
+<ul>
+135
+<li>الزوايا</li>
+136
+<li>المثلثات</li>
+137
+<li>الأشكال الهندسية</li>
+138
+</ul>
+139
+</div>
+140
+ 
+141
+<div class="card">
+142
+<h2>الوحدة الثالثة: القياس</h2>
+143
+<ul>
+144
+<li>المحيط</li>
+145
+<li>المساحة</li>
+146
+<li>الحجم</li>
+147
+</ul>
+148
+</div>
+149
+ 
+150
+<div class="card">
+151
+<h2>الوحدة الرابعة: الإحصاء</h2>
+152
+<ul>
+153
+<li>جمع البيانات</li>
+154
+<li>التمثيل البياني</li>
+155
+<li>المتوسط الحسابي</li>
+156
+</ul>
+157
+</div>
+158
+ 
+159
+</div>
+160
+ 
+161
+<div class="quiz">
+162
+<h2>اختبر معلوماتك</h2>
+163
+<p>ما ناتج 15 + 27 ؟</p>
+164
+ 
+165
+<button onclick="showAnswer()">عرض الإجابة</button>
+166
+ 
+167
+<div class="answer" id="answer">
+168
+الإجابة الصحيحة هي: 42
+169
+</div>
+170
+</div>
+171
+ 
+172
+</div>
+173
+ 
+174
+<footer>
+175
+© 2026 موقع الرياضيات للصف الأول الإعدادي
+176
+</footer>
+177
+ 
+178
+<script>
+179
+function showAnswer(){
+180
+document.getElementById("answer").style.display = "block";
+181
+}
+182
+</script>
+183
+ 
+184
+</body>
+185
+</html>
